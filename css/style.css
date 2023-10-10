@@ -1,0 +1,77 @@
+body{
+    background-color: rgb(170, 214, 177);
+    margin: 0;
+    /* uses flex to maintain vertical and horizontal centering of master container */
+    display: flex;
+    /* center horizontally  */
+    align-items: center;
+    /* center vertically */
+    justify-content: center;
+    /* must specify height for vertical centering to work  */
+    height:100vh;
+}
+#main-container{
+    /* fix dimentions of master */
+    width:700px;
+    height:600px;
+    background-color: #e2f8dd;
+    /* add drop shadow */
+    filter: drop-shadow(0px 0px 10px #000);
+}
+#hero-container{
+    position: relative;
+    width: 700px;
+    height: 500px;
+}
+#hero-image{
+    width: 700px;
+    height: 500px;
+    object-fit: cover;
+    object-position: 100% 5%;
+}
+#days-container{
+    /* uses flex to arrange days in a row */
+    display: flex;
+}
+.day{
+    /* constrain dimensions of each day to match overall width and height */
+    width:100px;
+    height:100px;
+}
+.button:hover{
+    /* changes day colour on rollover */
+    background-color: #c5b0da;
+}
+.button:active{
+    /* changes day colour on selection */
+    background-color: #b07fe0;
+}
+h4{
+    /* style all h4 text elements */
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #5c8d51;
+    /* center text horizontally */
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+#city-text{
+    /* match the line height to font size for better control of postioning */
+    font-size: 60px;
+    line-height: 60px;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    margin: 0;
+    color: rgba(250, 250, 250, 0.747);
+    filter: drop-shadow(0px 0px 5px #000);
+}
+.weather-icon{
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+}
